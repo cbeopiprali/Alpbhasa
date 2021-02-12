@@ -1257,14 +1257,14 @@ var surveyJSON = {
              }
           ]
         },
-        {
-          "type": "text",
-          "name": "date",
-          "title": "Date of the Data",
-          "inputType": "date",
-		"isRequired": true,
-          "min": "2020-12-01"
-        },
+//         {
+//           "type": "text",
+//           "name": "date",
+//           "title": "Date of the Data",
+//           "inputType": "date",
+// 		"isRequired": true,
+//           "min": "2020-12-01"
+//         },
         {
           "type": "matrixdynamic",
           "name": "question2",
@@ -1413,7 +1413,7 @@ function sendDataToServer(survey) {
 					var q = data.question2[i];
                     $.post( "https://docs.google.com/forms/u/2/d/e/1FAIpQLSdaSIV6gbKeP0DJLtqvpTWkJ2OLiMlYXOniVgCLlfeYf-90Tw/formResponse",
                     {
-                    "entry.268875749": data.date,
+//                     "entry.268875749": data.date,
 					"entry.1793765460": data.peeoName,
 					"entry.2070308753": data.schoolName,
 					"entry.1884067501": q["Class"],
